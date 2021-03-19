@@ -1,56 +1,47 @@
 <template>
-  <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+  <v-app id="inspire">
+    <v-navigation-drawer v-model="drawer" app>
+      <!--  -->
+    </v-navigation-drawer>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+    <v-app-bar
+      app
+      absolute
+      color="#6A76AB"
+      dark
+      shrink-on-scroll
+      prominent
+      src="@/assets/spa-background-image-01.jpg"
+      fade-img-on-scroll
+      scroll-target="#scrolling-techniques-3"
+    >
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-spacer></v-spacer>
+      <v-toolbar-title>Application</v-toolbar-title>
+      <template v-slot:extension>
+        <v-tabs align-with-title>
+          <v-tab to="/galeria">Sección 1</v-tab>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+          <v-tab to="/form">Sección 2</v-tab>
+          <v-tab to="/sectionThree">Sección 3</v-tab>
+          <v-tab to="/sectionFour">Sección 4</v-tab>
+        </v-tabs>
+      </template>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <router-view></router-view>
     </v-main>
+    <footer-component></footer-component>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
+import FooterComponent from "@/components/FooterComponent.vue";
 export default {
-  name: "App",
-
+  data: () => ({ drawer: null }),
   components: {
-    HelloWorld,
+    FooterComponent,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
