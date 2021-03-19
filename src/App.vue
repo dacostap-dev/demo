@@ -20,7 +20,7 @@
       <v-toolbar-title>Application</v-toolbar-title>
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab to="/galeria">Sección 1</v-tab>
+          <v-tab to="/gallery">Galería de Imagenes</v-tab>
 
           <v-tab to="/form">Sección 2</v-tab>
           <v-tab to="/sectionThree">Sección 3</v-tab>
