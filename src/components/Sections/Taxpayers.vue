@@ -1,5 +1,8 @@
 <template>
   <v-container fluid>
+    <h2 class="font-weight-light text-center my-5">
+      Lista de Contribuyentes de la SUNAT
+    </h2>
     <v-data-table
       :headers="headers"
       :items="taxpayers"

@@ -1,24 +1,28 @@
 # vue-spa-demo
 
+Para ver el proyecto haga click en el siguiente enlace [Demo](https://demo.mitest.club "Click me").
+
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+**_Note:_** _Las variables de entorno no serán compartidas por seguridad_.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Dependencies
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- axios
+- vue2-google-maps
+- vee-validate
+
+## Services
+
+- API picsum.photos
+- API personal para servicios de la SUNAT

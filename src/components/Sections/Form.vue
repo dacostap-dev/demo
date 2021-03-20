@@ -1,5 +1,6 @@
 <template>
   <v-container fluid>
+    <h2 class="font-weight-light text-center my-5">Formulario de Contacto</h2>
     <validation-observer ref="observer" v-slot="{ invalid }">
       <form @submit.prevent="submit">
         <validation-provider
