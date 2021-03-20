@@ -5,6 +5,11 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/",
+    name: "home",
+    redirect: "gallery",
+  },
+  {
     path: "/gallery",
     name: "galeria",
     // route level code-splitting

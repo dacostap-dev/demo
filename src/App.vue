@@ -85,7 +85,7 @@ import FooterComponent from "@/components/FooterComponent.vue";
 import GoogleMaps from "@/components/GoogleMaps.vue";
 
 export default {
-  data: () => ({ drawer: null }),
+  data: () => ({ drawer: false }),
   components: {
     FooterComponent,
     GoogleMaps,
